@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:23890','+proj=utm +zone=50 +south +a=6378160 +rf=298.247 +units=m +no_defs');</script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="layers/Kaltim_0.js"></script><script src="layers/Januari_1.js"></script><script src="layers/Februari_2.js"></script><script src="layers/Maret_3.js"></script><script src="layers/April_4.js"></script><script src="layers/Mei_5.js"></script><script src="layers/Juni_6.js"></script><script src="layers/Juli_7.js"></script><script src="layers/Agustus_8.js"></script><script src="layers/September_9.js"></script><script src="layers/Oktober_10.js"></script><script src="layers/November_11.js"></script><script src="layers/Desember_12.js"></script><script src="layers/JanuariDesember_13.js"></script><script src="layers/ContourJanuari_14.js"></script><script src="layers/ContourFebruari_15.js"></script><script src="layers/ContourMaret_16.js"></script><script src="layers/ContourApril_17.js"></script><script src="layers/ContourMei_18.js"></script><script src="layers/ContourJuni_19.js"></script><script src="layers/ContourJuli_20.js"></script><script src="layers/ContourAgustus_21.js"></script><script src="layers/ContourSeptember_22.js"></script><script src="layers/ContourOktober_23.js"></script><script src="layers/ContourNovember_24.js"></script><script src="layers/ContourDesember_25.js"></script><script src="layers/ContourKaltim_26.js"></script><script src="layers/GarisBatasKotaKabupatenKaltim_27.js"></script><script src="layers/CurahHujanKaltimJanuari2024_28.js"></script><script src="layers/CurahHujanKaltimFebruari2024_29.js"></script><script src="layers/CurahHujanKaltimMaret2024_30.js"></script><script src="layers/CurahHujanKaltimApril2024_31.js"></script><script src="layers/CurahHujanKaltimMei2024_32.js"></script><script src="layers/CurahHujanKaltimJuni2024_33.js"></script><script src="layers/CurahHujanKaltimJuli2024_34.js"></script><script src="layers/CurahHujanKaltimAgustus2024_35.js"></script><script src="layers/CurahHujanKaltimSeptember2024_36.js"></script><script src="layers/CurahHujanKaltimOktober2024_37.js"></script><script src="layers/CurahHujanKaltimNovember2024_38.js"></script><script src="layers/CurahHujanKaltimDesember2024_39.js"></script><script src="layers/TitikStasiunBMKGKaltim_40.js"></script>
+        <script src="styles/Kaltim_0_style.js"></script><script src="styles/Januari_1_style.js"></script><script src="styles/Februari_2_style.js"></script><script src="styles/Maret_3_style.js"></script><script src="styles/April_4_style.js"></script><script src="styles/Mei_5_style.js"></script><script src="styles/Juni_6_style.js"></script><script src="styles/Juli_7_style.js"></script><script src="styles/Agustus_8_style.js"></script><script src="styles/September_9_style.js"></script><script src="styles/Oktober_10_style.js"></script><script src="styles/November_11_style.js"></script><script src="styles/Desember_12_style.js"></script><script src="styles/JanuariDesember_13_style.js"></script><script src="styles/ContourJanuari_14_style.js"></script><script src="styles/ContourFebruari_15_style.js"></script><script src="styles/ContourMaret_16_style.js"></script><script src="styles/ContourApril_17_style.js"></script><script src="styles/ContourMei_18_style.js"></script><script src="styles/ContourJuni_19_style.js"></script><script src="styles/ContourJuli_20_style.js"></script><script src="styles/ContourAgustus_21_style.js"></script><script src="styles/ContourSeptember_22_style.js"></script><script src="styles/ContourOktober_23_style.js"></script><script src="styles/ContourNovember_24_style.js"></script><script src="styles/ContourDesember_25_style.js"></script><script src="styles/ContourKaltim_26_style.js"></script><script src="styles/GarisBatasKotaKabupatenKaltim_27_style.js"></script><script src="styles/CurahHujanKaltimJanuari2024_28_style.js"></script><script src="styles/CurahHujanKaltimFebruari2024_29_style.js"></script><script src="styles/CurahHujanKaltimMaret2024_30_style.js"></script><script src="styles/CurahHujanKaltimApril2024_31_style.js"></script><script src="styles/CurahHujanKaltimMei2024_32_style.js"></script><script src="styles/CurahHujanKaltimJuni2024_33_style.js"></script><script src="styles/CurahHujanKaltimJuli2024_34_style.js"></script><script src="styles/CurahHujanKaltimAgustus2024_35_style.js"></script><script src="styles/CurahHujanKaltimSeptember2024_36_style.js"></script><script src="styles/CurahHujanKaltimOktober2024_37_style.js"></script><script src="styles/CurahHujanKaltimNovember2024_38_style.js"></script><script src="styles/CurahHujanKaltimDesember2024_39_style.js"></script><script src="styles/TitikStasiunBMKGKaltim_40_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>        
+    </body>
+</html>
